@@ -7,7 +7,7 @@ let app = express()
 const server=http.createServer(app)
 const io=new Server(server,{
     cors:{
-        origin:"https://smart-talk-frountend.vercel.app/"
+        origin:"https://smarttalk-frountend-new.onrender.com"
     }
 })
  const userSocketMap ={}

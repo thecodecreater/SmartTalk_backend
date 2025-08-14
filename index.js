@@ -13,8 +13,12 @@ const port=process.env.PORT || 5000
 
 
 app.use(cors({
-    origin:"https://smarttalk-frountend-new.onrender.com",
-    credentials:true
+    origin: [
+        "https://smart-talk-frountend-new.vercel.app",
+        "https://smarttalk-frountend-new.onrender.com",
+        "http://localhost:3000"
+    ],
+    credentials: true
 }))
 app.use(express.json())
 app.use(cookieParser())
